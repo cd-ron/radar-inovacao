@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
             $user = Auth::user();
             $view->with(compact('user'));
         });
-        Carbon::setLocale('pt_BR');
+        Carbon::setLocale($this->app->getLocale());
     }
 
     /**
