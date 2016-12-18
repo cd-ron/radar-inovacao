@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-1 date-info">
                 <h3>{{ $event->date->day }}</h3>
-                <p>{{ $event->date->->setLocale('pt_BR')->format('F') }}</p>
+                <p>{{ $event->date->setLocale('pt_BR')->format('F') }}</p>
             </div>
             <div class="col-md-6">
                 <h4>{{$event->name}}</h4>
