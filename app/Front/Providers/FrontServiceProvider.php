@@ -3,8 +3,6 @@
 namespace App\Front\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Admin\Category\Models\Category;
-use App\Admin\SubCategory\Models\SubCategory;
 
 class FrontServiceProvider extends ServiceProvider
 {
@@ -15,7 +13,6 @@ class FrontServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'front');
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'front');
     }

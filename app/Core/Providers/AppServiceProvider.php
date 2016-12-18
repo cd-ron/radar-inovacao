@@ -3,6 +3,7 @@
 namespace App\Core\Providers;
 
 use Auth;
+use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -18,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
             $user = Auth::user();
             $view->with(compact('user'));
         });
+        Carbon::setLocale('pt_BR');
     }
 
     /**
