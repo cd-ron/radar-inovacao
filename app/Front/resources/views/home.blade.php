@@ -14,6 +14,7 @@
                 </a>
             </div>
             <div class="col-md-1 date-info">
+                {!! \Carbon\Carbon::setLocale('pt_BR') !!}
                 <h3>{{ $event->date->day }}</h3>
                 <p>{{ $event->date->format('F') }}</p>
             </div>
