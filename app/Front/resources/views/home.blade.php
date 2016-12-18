@@ -14,9 +14,8 @@
                 </a>
             </div>
             <div class="col-md-1 date-info">
-                {!! \Carbon\Carbon::setLocale('pt_BR') !!}
                 <h3>{{ $event->date->day }}</h3>
-                <p>{{ $event->date->format('F') }}</p>
+                <p>{{ $event->verifyMonth($event->date->month) }}</p>
             </div>
             <div class="col-md-6">
                 <h4>{{$event->name}}</h4>
@@ -24,5 +23,6 @@
                 <a class="btn btn-primary" href="#">Veja mais <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
+        <hr>
     @endforeach
 @stop

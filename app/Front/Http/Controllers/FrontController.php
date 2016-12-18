@@ -14,4 +14,9 @@ class FrontController extends CoreController
         return view('front::home')->with(compact('events'));
     }
 
+    public function form()
+    {
+        return view('front::form');
+    }
+
 }
